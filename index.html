@@ -1,0 +1,121 @@
+<html >
+<head>
+    <title>Teacher Activity</title>
+</head>
+<body>
+    <p>
+        How to declare the arrays?
+        <h4 id="declaration_of_arrays">
+
+        </h4>
+    </p>
+    
+    <p>
+        How to  fetch the first element of the arrays?
+        <h4 id="access_first_element">
+
+        </h4>
+    </p>
+
+     <p>
+        How to  fetch the second element of the arrays?
+        <h4 id="access_second_element">
+
+        </h4>
+    </p>
+
+    <p>
+        How to  fetch the third element of the arrays?
+        <h4 id="access_third_element">
+
+        </h4>
+    </p>
+
+    <p>
+        How to  fetch the length  of the arrays?
+        <h4 id="display_length_of_array">
+
+        </h4>
+    </p>
+    <hr>
+    <p>
+        How to loop the array arrays?
+        <h4 id="loop_the_array"></h4>
+    
+    </p>
+    <hr>
+    <p>
+    how yo add element at the end of the arrays?
+    <h4 id="add_element_at_the_end_of_the_arrays">
+
+    </h4>
+    </p>
+    <hr>
+    <p>
+       how yo add more element at the end of the arrays? 
+       <h4 id="add_more_element_at_the_end_of_the _arrays"></h4>
+    </p>
+<hr>
+<p>
+    how to decllare the arrays with alphabets?
+    <h4 id="display_alphabets_array"></h4>
+</p>
+<hr>
+<p>
+    how to reverse the arrays with alphabets?
+    <h4 id="display_reverse_array"></h4>
+</p>
+<hr>
+<p>
+    how to declare the arrays with number?
+    <h4 id="display_number_array"></h4>
+</p>
+<hr>
+<p>
+    how to declare the arrays with alphabets?
+    <h4 id="display_shorted_alphaabets_array"></h4>
+</p>
+
+    <script>
+        fruit_el=["mango","apple","banana"]
+
+        console.log(fruit_el)
+        document.getElementById("declaration_of_arrays").innerHTML=fruit_el
+
+        first_fruit=fruit_el[0]
+        console.log(first_fruit)
+        document.getElementById("access_first_element").innerHTML=first_fruit
+
+        second_fruit=fruit_el[1]
+        console.log(second_fruit)
+        document.getElementById("access_second_element").innerHTML=second_fruit
+
+        third_fruit=fruit_el[2]
+        console.log(third_fruit)
+        document.getElementById("access_third_element").innerHTML=third_fruit
+
+
+        fruit_leng=fruit_el.length
+        console.log(fruit_leng)
+        document.getElementById("display_length_of_array").innerHTML=fruit_leng
+
+        var array_value=""
+
+        for (i=0;i<fruit_el.length;i++){
+        console.log(fruit_el[i])
+        array_value = array_value + fruit_el [i]+"<br>"
+
+    }
+    document.getElementById("loop_the_array").innerHTML=array_value
+
+    fruit_el.push("lemon")
+    console.log(fruit_el)
+    document.getElementById("add_element_at_the_end_of_the_arrays").innerHTML=fruit_el
+
+    fruit_el.push("Pine apple")
+    console.log(fruit_el)
+    document.getElementById("add_more_element_at_the_end_of_the _arrays").innerHTML=fruit_el
+
+    </script>
+</body>
+</html>
